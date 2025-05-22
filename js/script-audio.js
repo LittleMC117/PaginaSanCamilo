@@ -3568,6 +3568,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+<<<<<<< HEAD
 /* Script Audio Contencion-mecanica */
 
 //Script Audio Definicion-Objetivo
@@ -4534,6 +4535,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 /* Script Audio Bibliografia */ 
+=======
+/* Script Audio Bibliografia */ 
+
+>>>>>>> c855338ada91f3c61c09d4dda27e9866873e8b52
 document.addEventListener("DOMContentLoaded", () => {
     const eventoadvSection = document.querySelector("#bibliografia");
     const playPauseBtn = eventoadvSection.querySelector(".playPause");

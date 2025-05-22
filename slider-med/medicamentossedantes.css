@@ -40,12 +40,20 @@ h2{
 
 h3 {
     text-align: center;
+<<<<<<< HEAD
     font-size: 1.5rem;
+=======
+    font-size: 1.7rem;
+>>>>>>> c855338ada91f3c61c09d4dda27e9866873e8b52
 }
 
 h4{
     text-align: center;
+<<<<<<< HEAD
     font-size: 1rem;
+=======
+    font-size: 1.5rem;
+>>>>>>> c855338ada91f3c61c09d4dda27e9866873e8b52
 }
 
 /*Estilo para animación de scroll*/
@@ -440,6 +448,13 @@ main {
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+.contenido-pie h4{
+    font-size: 1rem;
+}
+
+>>>>>>> c855338ada91f3c61c09d4dda27e9866873e8b52
 .creadores {
     display: flex;
     align-items: flex-start;
@@ -475,7 +490,11 @@ main {
     flex-direction: column !important;
 }
 
+<<<<<<< HEAD
 .santiago p, .cesar p{
+=======
+.santiago p{
+>>>>>>> c855338ada91f3c61c09d4dda27e9866873e8b52
     text-align: center;
 }
 
@@ -483,6 +502,7 @@ main {
     background-color: white;
     width: 6rem;
     height: 6rem;
+<<<<<<< HEAD
     border-radius: 10px;
 }
 
@@ -490,6 +510,13 @@ main {
     width: 15rem;
     height: 5rem;
     border-radius: 10px;
+=======
+}
+
+.cesar img {
+    width: 8rem;
+    height: 4rem;
+>>>>>>> c855338ada91f3c61c09d4dda27e9866873e8b52
 }
 
 /* Estilos responsivos */
@@ -655,8 +682,12 @@ main {
     }
 
     .menu-nav ul li:hover > ul{
+<<<<<<< HEAD
         display: flex;
         background-color: rgba(20, 20, 20, 0.897);
+=======
+        display: none;
+>>>>>>> c855338ada91f3c61c09d4dda27e9866873e8b52
     }
 
     /*Estilos Main*/
@@ -788,8 +819,12 @@ main {
     }
 
     .menu-nav ul li:hover > ul{
+<<<<<<< HEAD
         display: flex;
         background-color: rgba(20, 20, 20, 0.897);
+=======
+        display: none;
+>>>>>>> c855338ada91f3c61c09d4dda27e9866873e8b52
     }
 
     /*Estilos Main*/

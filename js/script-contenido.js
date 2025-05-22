@@ -99,6 +99,7 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => console.error("Error cargando el JSON:", error));
+<<<<<<< HEAD
 });
 
 //cargar el contenido  de contencion.html del JSON en los parrafos
@@ -116,4 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
             });
         })
         .catch(error => console.error("Error cargando el JSON:", error));
+=======
+>>>>>>> c855338ada91f3c61c09d4dda27e9866873e8b52
 });
