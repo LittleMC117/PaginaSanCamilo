@@ -1,0 +1,172 @@
+{
+    "que-es1":"La terapia electroconvulsiva (TEC) es un método terapéutico seguro y efectivo para el tratamiento de ciertos trastornos psiquiátricos. Generalmente, se administra bajo anestesia y relajación para tratar la depresión grave y resistente a medicación,considerándose la opción más rápida efectiva. En ocasiones se usa en otros trastornos que no responden a fármacos (TAB, esquizofrenia, catatonía).",
+    "que-es2":"Durante la TEC, se aplica una corriente eléctrica de baja intensidad en el cerebro del paciente mientras está bajo anestesia general lo que produce una convulsión generalizada que afecta diversas partes del cerebro.",
+
+    "fun-1":"Los estudios demuestran que la terapia electroconvulsiva bajo anestesia y relajación (TECAR) actúa sobre las células que regulan la modulación del neurotransmisor GABA y glutamato mediante un proceso de despolarización y repolarización.",
+    "fun-2":"La evidencia demuestra para esta terapia una tasa de éxito que oscila entre el 60 y el 90% en pacientes con depresión severa.",
+
+    "ind-1":"Depresión grave y resistente al tratamiento.",
+    "ind-2":"Manía grave y refractaria.",
+    "ind-3":"Catatonía de cualquier origen.",
+    "ind-4":"Esquizofrenia y otras enfermedades psicóticas.",
+    "ind-5":"Enfermedad de parkinson complicada.",
+    "ind-6":"Depresión severa durante embarazo o puerperio.",
+    "ind-7":"Trastorno Obsesivo-Compulsivo (TOC) grave.",
+    "ind-8":"Algunas formas de trastorno de dolor crónico.",
+    "ind-9":"Demencia complicadda por agitación severa.",
+    "ind-10":"Comportamiento agresivo que no responde a otras intervenciones.",
+
+    "contr-1":"La convulsión provocada durante el TECAR puede generar incrementos temporales en la presión arterial, el consumo de oxígeno del miocardio, la frecuencia cardiaca y la presión intracraneal. Es importante tomar precauciones en pacientes con alguna condición cardiovascular, pulmonar o del SNC que pudiera poner en riesgo su salud.",
+
+    "contr-2":"Hipertensión intracraneal.",
+    "contr-3":"Neoplasias que ocupen el espacio intracraneal.",
+    "contr-4":"Feocromocitoma.",
+    "contr-5":"Aneurisma cerebral.",
+    "contr-6":"Accidente Cerebrovascular reciente.",
+    "contr-7":"Desprendimiento de retina.",
+
+    "contr-8":"Hipertensión intracraneal sin presencia de masa.",
+    "contr-9":"Defectos en la conducción eléctrica cardiovascular.",
+    "contr-10":"Embarazos con riesgo alto de parto pretérmino o amenaza de aborto.",
+    "contr-11":"Osteoporosis grave.",
+    "contr-12":"Glaucoma.",
+    "contr-13":"Enfermedades de la placa motora.",
+    "contr-14":"Pacientes con marcapasos.",
+
+    "val-1":"Antes de llevar a cabo el procedimiento es necesario que el paciente sea evaluado minuciosamente por un psiquiatra.",
+
+    "val-2":"Detalles del procedimiento.",
+    "val-3":"Riesgos.",
+    "val-4":"Posibles beneficios.",
+    "val-5":"Efectos secundarios.",
+    "val-6":"Alternativas de tratamiento.",
+
+    "val-7":"Exámen físico.",
+    "val-8":"Pruebas de laboratorio.",
+    "val-9":"Un EKG.",
+    "val-10":"Otras pruebas para asegurar que el paciente esté en óptimas condiciones.",
+
+    "val-11":"Es fundamental que el paciente informe al médico acerca de los medicamentos que está tomando, ya que algunos de ellos podrían reducir la efectividad del procedimiento o causar efectos adversos.",
+    "val-12":"El médico indicará al paciente qué medicamentos debe continuar y cuáles debe suspender durante el curso de la TECAR. Es importante que el paciente no ingiera alimentos ni líquidos desde la medianoche anterior hasta después de la sesión.",
+
+    "riesgo-1":"La TECAR es considerada uno de los procedimientos más seguros que se realizan bajo anestesia general.",
+    "riesgo-2":"Existen complicaciones graves relacionadas con la anestesia general, aunque estas son raras y pueden incluir problemas cardíacos, pulmonares, derrames cerebrales, infecciones y, en casos extremos, la muerte.",
+    "riesgo-3":"<strong>Debido al breve tiempo en que el paciente está bajo anestesia en el procedimiento, los riesgos son infrecuentes.</strong>",
+
+    "prepa-1":"<strong>La TECAR es administrada por un equipo de profesionales de la salud usualmente compuesto por:</strong>",
+    "prepa-2":"Medicina general.",
+    "prepa-3":"Psiquiatría.",
+    "prepa-4":"Anestesiología.",
+    "prepa-5":"Enfermería profesional.",
+    "prepa-6":"Equipo de auxiliares de enfermería.",
+
+    "frec-1":"Se recomienda que se administre tres veces por semana o interdiaria, con el fin de reducir los efectos adversos cognitivos.",
+    "frec-2":"Posteriormente, el psiquiatra evaluará mejoría del cuadro clínico para determinar si se mantiene la misma cantidad de días o reducirla.",
+    "frec-3":"<strong>A continuación se van a describir los factores a tener en cuenta en las fases previas a la TECAR.</strong>",
+
+    "segur-1":"Verificar identidad, asegurarse de que no haya ingerido alimentos o bebidas, que haya tomado los medicamentos prescritos y que haya firmado el formulario de consentimiento informado. <strong>Se monitorea al paciente después de la convulsión durante 15-30 minutos.</strong>",
+
+    "equi-1":"Dispositivo Terapia electroconvulsiva (TEC) (MECTA spECTrum).",
+    "equi-2":"Electrodos para administrar la electricidad y para monitoreo del electroencefalograma.",
+    "equi-3":"Monitor cardiovisoscopio para vigilar signos vitales y oximetría de pulso.",
+    "equi-4":"Cánula nasal o máscara facial y suministro de oxígeno.",
+    "equi-5":"Aparato de succión.",
+    "equi-6":"Tensiómetro.",
+
+    "medica":"El anestésico y bloqueador neuromuscular son fundamentales; medicamentos anticolinégicos y cardiovasculares se usan según lo indicado.",
+
+    "documen-1":"Registrar los signos vitales, la configuración del dispositivo de la TEC (la dosificacuón) y duración de la convulsión. <strong> Las funciones fisiológicas monitoreadas durante la TECAR incluyen:</strong>",
+    "documen-2":"Signos vitales.",
+    "documen-3":"Saturación de oxígeno en sangre.",
+    "documen-4":"Ritmos cardíacos (EKG).",
+    "documen-5":"Actividad eléctrica del cerebro (electroencefalograma).",
+
+    "electro-1":"Permite al médico confirmar la aparición y finalización de una convulsión central de manera oportuna. Se realiza a través de uno o dos canales, desde las posiciones frontal y mastoidea derecha e izquierda.",
+    "electro-2":"<strong> La interpretación del dispositivo <br> no reemplaza la del profesional </strong>",
+    "electro-3":"Los dispositivos de la terapia (TEC) (MECTA spECTrum) pueden mostrar el trazado del EEG en un registro de papel o en la pantalla de una computadora, además de información sobre la convulsión mediante índices automatizados.",
+
+    "contra-1":"Se registra desde el pie derecho para medir la duración del componente motor para la convulsión. Esto con el posible uso de la colocación de electrodos unilaterales derechos. Se coloca un manguito de presión arterial y se infla en el tobillo derecho para evitar que el relajante muscular entre en el pie.",
+    "contra-2":"Como alternativa se puede simplemente colocar un manguito de presión arterial en el tobillo y hacer que un miembro del equipo de tratamiento observe el pie después del estímulo eléctrico y registre la duración de las contracciones tónico-clónicas.",
+
+    "tipo-adm1":"Durante el procedimiento se aplica una corriente eléctrica a través del cerebro mediante dos electrodos, metálicos o adhesivos desechables que se colocan en el cuero cabelludo. Hay 3 formas de colocar los electrodos pero a continuación se describen las 2 más importantes.",
+    
+    "bitemp":"Es la técnica original usada en la TEC. Consiste en la colocación de un electrodo en cada sien con el centro del electrodo a una distancia de 2 a 3 cm por encima del punto medio de la línea que conecta el canto externo del ojo y el meato auditivo externo a cada lado de la cabeza. <strong> Tiene la mayor eficacia antidepresiva y produce una respuesta más rápida. Sin embargo, es la que puede causar el mayor deterioro en la memoria. </strong>",
+
+    "unilateral":"Consiste en la colocación de un electrodo en la sien derecha y otro en el cuero cabelludo, justo a la derecha del vértice (colocación d'Elia). Un electrodo se coloca como en la técnica ya descrita en el lado derecho y el otro se coloca de 2 a 3 cm al lado derecho del vértice del cráneo. Se usa para evitar la estimulación inicial del hemisferio cerebral izquierdo, que se asocia al lenguaje. <strong>Tiene tasas de remisión ligeramente más bajas que la anterior técnica, generalmente causa menos efectos cognitivos, como el deterioro de la memoria.</strong>",
+
+    "tipo-adm2":"La colocación <strong>bitemporal </strong> se recomienda en <strong>situaciones urgentes</strong> como depresión potencialmente mortal, riesgo suicida inminente, anorexia total, manía severa y/o catatonía. Se sugiere la <strong>unilateral</strong> derecha en casos que se tenga preocupación por minimizar la <strong>amnesia retrógrada.</strong>",
+
+    "tipo":"Se utiliza una forma de <strong>onda de pulso corto (0,5 a 2,0 milisegundos)</strong> o <strong>ultra corto (0.25 - 0.5 milisegundos)</strong> para inducir la convulsión. La onda de pulso corto es considerada como opción estándar por su eficacia en comparación a la ultra corta. La ultra corta es la más tolerable. La elección del tipo de estímulo depende de la urgencia de la respuesta, el historial de tratamiento previo y las preferencias del paciente.",
+
+    "inten-1":"Afecta tanto la eficacia como la velocidad de respuesta, así como los efecos cognitivos adversos. La dosis del estímulo se describe en términos de carga absoluta (en miliculombios) o múltiplos del umbral convulsivo (UC) El UC se puede determinar empíricamente en la primera sesión de tratamiento.",
+    "inten-2":"Se configura inicialmente el TEC para usar una pequeña cantidad de carga para inducir la convulsión. Si esta dosis no produce una convulsión, se reinicia el dispositivo para <strong>administrar dosis más altas hasta que se produzca una convulsión, lo que establece el umbral convulsivo</strong>. Los parámetros que determinan la dosis de estímulo incluyen la corriente, la duración de cada pulso eléctrico, la frecuencia de cada uno y la duración total.",
+
+    "caract":"La guía práctica clínica de Australia y Nueva Zelanda proporciona recomendaciones respaldadas por evidencia para ajustar los parámetros del TEC. En caso de iniciar con unilateral derecha, se recomienda que a la 6 sesión se haga una evaluación objetiva de la patología a tratar; y dependiendo de su evolución continuar con el mismo método o transicionar al bitemporal.",
+
+    "dosifi-1":"Se debe encontrar una intensidad del estímulo (IE) que supere lo suficiente el umbral de convulsión como para ser efectiva y del mismo modo, administrar el menor estímulo posible para reducir la gravedad de los efectos adversos cognitivos.",
+    "dosifi-2":"Los principales métodos son: El basado en la edad (MBE), el basado en la mitad de la edad (MBME), el de dosis fija (MDF) y la titulación individualizada (TI). Por motivos de riesgo <strong>se recomienda que se implemente la TI</strong> para determinar la dosificación del paciente, una metodología que es más precisa con mejores resultados en cuanto a eficacia y tolerancia. Se enfoca en encontrar el UC en la primera sesión de la TEC, denominada sesión diagnóstica, en la siguiente se debe multiplicar la IE para alcanzar la hipotética dosis de estimulación terapéutica según posición de los elector y el tipo de estímulo e ir aumentando paulatinamente la carga del estímulo.",
+    "dosifi-3":"La dosis del estímulo eléctrico en TEC debe ser individualizada según la gravedad del paciente y el riesgo de efectos cognitivos adversos. Se recomienda seguir las titulaciones de las tablas que se encuentran a continuación para administrar la correcta dosis de la TEC. Estas recomendaciones están basadas en las guías de práctica clínica de Australia y Nueva Zelanda.",
+    "dosifi-4":"<strong>Los parámetros de la estimulación unilateral determinan la duración de las convulsiones. Si no hay convulsión incrementar 5J hasta lograrla. Siguiente día incrementar la carga 6 veces la inicial.</strong>",
+    "dosifi-5":"<strong>Los parámetros de la estimulación unilateral determinan la duración de las convulsiones. Si no hay convulsión incrementar 5J hasta lograrla. Siguiente día incrementar la carga el doble de la dosis inicial.</strong>",
+    "dosifi-6":"Dentro de las desventajas de este método se encuentra la pobre adherencia que puede presentar el encargado de administrar el estímulo de la TEC. Esto por el hecho de que la primera sesión no es terapéutica, pero esto no se debería entender como una desventaja, sino como un paso extra para reducir de manera significativa los efectos cognitivos que la TEC trae consigo.",
+    
+    "anestesia":"Su propósito es garantizar la comodidad y seguridad del paciente. El anestesiólogo se encarga de pre oxigenar al paciente y administrar medicamentos que induzcan la inconsciencia y relajen o paralicen los músculos esqueléticos. Además de un fármaco anticolinérgico antes del procedimiento para prevenir la aparición de bradicardia o asistolia.",
+
+    "preoxi":"Se administra oxígeno suplementario a través de una cánula nasal o una mascarilla facial. El objetivo de este proceso es mantener la saturación de oxígeno en el 100% o cerca de este para aumentar la seguridad del procedimiento y reducir la incidencia de eventos adversos.",
+    
+    "anticoli":"Se recomienda administrar una pre medicación con un <strong>agente anticolinérgico</strong> como el <strong>glicopirrolato</strong> (0.2 mg IV) o <strong>atropina</strong> (0.4 mg IV) con el fin de prevenir la bradicardia y el exceso de excreción oral y respiratoria. Esto debido a la posibilidad de administrar un estímulo subconvulsivo que induce una descarga para simpática sin la oposición de la actividad simpática posterior de una convulsión.",
+
+    "anestesicos":"El propósito es lograr un nivel de anestesia adecuado (no demasiado profundo). El fármaco de elección es el <strong>metohexital</strong>, se administra IV con dosis de <strong>0,75 a 1 mg/kg</strong>. El propofol a una dosis de 0,75 mg/kg es una alternativa común y más accesible pero puede reducir la duración de las convulsiones. Otras opciones: tiopental, etomidato y la ketamina.",
+
+    "relax-musc":"Se debe utilizar la relajación del músculo esquelético con el fin de minimizar la convulsión motora y prevenir lesiones músculoesqueléticas, especialmente en pacientes con osteoporosis. Como agente estándar se usa la succinilcolina que usa IV en una dosis de 0,75 a 1 mg/kg. La mayoría de pacientes recuperan la fuerza muscular en pocos minutos.",
+
+    "medic-cardio":"Es posible administrar fármacos profilácticos para prevenir la respuesta hipertensiva y taquicardia que pueden ocurrir debido a la descarga simpática inducida por las convulsiones. Los B- bloqueadores son los más usados ya que la TECAR puede provocar arritmias auriculares y ventriculares, como contracciones ventriculares prematuras o taquicardia ventricular. El aumento de la FC y la PA aumenta el consumo de oxígeno y por ello de isquemia y arritmias malignas.",
+
+    "duracion1":"Generalmente oscila entre <strong>15 y 70 segundos</strong> en el registro electroencefalográfico. La convulsión central suele ser un 10% a un 30% más larga que la motora. El tiempo <strong>máximo no debe exceder los 2 minutos</strong>. A continuación se muestran los tipos de convulsión.",
+    "duracion2":"Las convulsiones breves pueden no ser tan efectivas como las óptimas, y las prolongadas pueden estar asociadas con un mayor riesgo de deterioro cognitivo. A continuación se muestra cómo proceder ante cada tipo de convulsión.",
+
+    "recom-consi1":"Diabetes",
+    "recom-consi2":"Medir los niveles de glucosa en sangre antes y después de la TEC.",
+    "recom-consi3":"Si se retrasa el desayuno, se puede retrasar la administración de su insulina matutina habitual hasta después de la TEC y antes de comer.",
+    "recom-consi4":"Suspender los agentes orales y la insulina de acción corta hasta que el paciente pueda comer.",
+    "recom-consi5":"El efecto de la TEC sobre la glucemia es impredecible debido a los cambios en la dieta, apetito y nivel de energía que pueden resultar del procedimiento.",
+
+    "recom-consi6":"Asma o enfermedad pulmonarobstructiva crónica",
+    "recom-consi7":"Continuar el régimen ambulatorio de broncodilatadores y glucocorticoides inhalados.",
+    "recom-consi8":"Proporcionar el tratamiento estándar durante una exacerbación del asma (agonistabeta inhalados y, si es necesario, glucocorticoides) antes de proceder con la TEC.",
+    "recom-consi9":"La teofilina aumenta el riesgo de status epilepticus después de la TEC , por lo que sedebe suspender de manera titulada.",
+
+    "recom-consi10":"Necesidad de anticoagulacióna largo plazo",
+    "recom-consi11":"Continuar con la anticoagulación para mantener un INR de hasta 3.5, a menos que haya un mayor riesgo de hemorragia intracraneal (por masa o aneurisma).",
+    "recom-consi12":"La TEC parece ser segura en pacientes que requieren anticoagulación.",
+
+    "recom-consi13":"Hipertensión (mal controlada)",
+    "recom-consi14":"Iniciar o intensificar el tratamiento antihipertensivo.",
+    "recom-consi15":"Retrasar la TEC hasta que la presión arterial sea menor de 140/90.",
+    "recom-consi16":"La presión arterial aumenta durante la fase postictal de la TEC.",
+
+    "recom-consi17":"Hipertensión (bien controlada)",
+    "recom-consi18":"Continuar con el tratamiento antihipertensivo sin modificaciones rutinarias.",
+
+    "recom-consi19":"Estenosis aórtica",
+    "recom-consi20":"Debe contar con valoración de cardiología antes de TEC, de lo contrario considerar otras alternativas.",
+
+    "recom-consi21":"Fibrilación auricular",
+    "recom-consi22":"La TEC parece ser segura en estos pacientes.",
+    "recom-consi23":"Continuar con medicamentos ambulatorios para controlar FC.",
+    "recom-consi24":"Controlar FC con bloqueadores de los canales de calcio si es necesario.",
+    "recom-consi25":"Administrar la anticoagulación como ya se especificó en el respectivo apartado.",
+
+    "recom-consi26":"Enfermedad arterial coronaria (estable)",
+    "recom-consi27":"Se debe continuar los medicamentos como la aspirina, estatinas, agentes hipertensivos y medicamentos antiangiosos, incluyendo nitratos para afecciones cardiacas crónicas.",
+    "recom-consi28":"Continuar con aspirina y clopidogrel en pacientes con stents coronarios.",
+    "recom-consi29":"La interrupción de los medicamentos cardíacos a largo plazo en la mañana del procedimiento aumenta el riesgo de isquemia cardíaca.",
+
+    "depre":"La técnica utilizada es similar a la empleada en pacientes no embarazadas. Lo ideal es que se realice en un entorno que incluya psiquiatras y anestesiólogos con experiencia con estas pacientes, además de obstetras que cuenten con equipos de monitorización fetal. <strong> Antes de las 12 semanas el manejo es normal.</strong>",
+
+    "admin-embara1":"Se debe <strong>evitar hiperventilación</strong> ya que puede disminuir oxigenación fetal.",
+    "admin-embara2":"Se recomienda <strong>hidratar a las pacientes con líquidos intravenosos</strong> previo a cada sesión de TEC, con el fin de reducir el riesgo de contracciones prematuras.",
+    "admin-embara3":"Durante embarazos entre <strong>12 y 23 semanas</strong> de gestación, es necesario <strong>registrar la frecuencia cardíaca fetal antes y después</strong> de cada tratamiento con TEC.",
+    "admin-embara4":"Se recomienda colocar una <strong>cuña debajo</strong> de la cadera derecha de la paciente durante el tratamiento de la TEC si la edad gestacional supera las <strong>20 semanas</strong> para <strong>evitar la compresión</strong> de la <strong>vena cava.</strong>",
+    "admin-embara5":"En embarazos que superan las <strong>24 semanas</strong> se recomienda un <strong>monitoreo continuo de FC y actividad uterina</strong> durante <strong>30 a 60 minutos antes y después</strong> de cada tratamiento con TEC."
+}

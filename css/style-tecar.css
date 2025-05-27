@@ -1,0 +1,1042 @@
+/* Estilos generales */
+html, body {
+    font-family: "Montserrat Alternates", serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+button{
+    background: white;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    color: var(--azul);
+    margin-left: 1rem;
+    margin-top: 5rem !important;
+}
+
+:root{
+    --azul: rgba(7,96,153,255);
+    --verde: rgb(103,185,62);
+    --azulizq: #d3e7fd;
+    --verdesc: #c2f1ce;
+    --verdec: #e6fbb9;
+}
+
+*,*:before,*:after{
+    box-sizing: inherit; /*Para usar todo el ancho y alto*/
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h4{
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Estilo para animación de scroll */
+.animado {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos Header */
+.encabezado{
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/encabezados/encabezado-tecar.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.encabezado::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.contenido-menu{
+    position: relative;
+    max-width: 1200px;
+    max-height: 100vh;
+    margin: 0 auto;
+    color: white;
+    z-index: 1;
+    flex-direction: column;
+    line-height: 2;
+    padding-top: 1rem;
+}
+
+.contenido-menu h2{
+    margin-top: 18rem;
+    margin-left: 15rem;
+    width: 20rem;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 25px rgba(255, 255, 255, 1);
+}
+
+.contenido-menu h2 span{
+    margin-left: 8rem;
+}
+
+/* Estilos barra de Navegación */
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.hamburguer{
+    display: none;
+}
+
+.menu-nav img{
+    width: 16rem;
+    height: 4.5rem;
+}
+
+.menu-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los elementos en una fila */
+    gap: 1.5rem;
+}
+
+.menu-nav ul li{
+    position: relative;
+}
+
+.menu-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    display: block;
+    background-color: transparent;
+}
+
+.menu-nav ul li a:hover{
+    color: var(--verde);
+}
+
+.menu-nav ul li ul {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    padding-top: 0.7rem;
+    list-style: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 50%; /* Centra el submenú respecto al elemento padre */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    width: 7.5rem;
+    border-radius: 15px;
+}
+
+.menu-nav ul li:hover > ul {
+    display: block;
+}
+
+/* Diseños Sub-menunavegación */
+
+.menu-nav ul li ul li a{
+    font-weight: 800;
+    font-size: 0.87rem;
+    text-align: center;
+}
+
+.menu-nav ul li ul li a:hover{
+    color: var(--azul);
+}
+
+/* Estilos Main */
+
+main{
+    width: 75rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.cont-definicion p, .cont-funciona p, .cont-ctrindicaciones p{
+    text-align: center;
+}
+
+.cont-indicaciones{
+    margin-top: 3rem;
+}
+
+.cont-indicaciones ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1rem;
+}
+
+.cont-indicaciones li{
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    min-height: 50px;
+    padding-left: 4rem;
+}
+
+.cont-indicaciones li::before{
+    content: "\e4fd";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 1.5rem;
+    top: 1rem;
+}
+
+.cont-ctrind p{
+    text-align: center;
+}
+
+.contraindicaciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 3rem;
+}
+
+.contraindicaciones ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1rem;
+}
+
+.contraindicaciones li{
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    min-height: 50px;
+    padding-left: 2rem;
+    min-width: 28rem;
+}
+
+.contraindicaciones li::before{
+    content: "\e4fe";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+    color: red;
+}
+
+.Audio4 p{
+    text-align: center;
+}
+
+.valoracion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 3rem;
+}
+
+.valoracion ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1rem;
+}
+
+.valoracion li{
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    min-height: 2rem;
+    padding-left: 2rem;
+    min-width: 15rem;
+}
+
+.valoracion li p{
+    text-align: justify;
+    word-break: break-word;
+}
+
+.valoracion li::before{
+    content: "\f35a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+}
+
+.riesgos p{
+    text-align: center;
+}
+
+.pym-f {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.adminis p, .frecuencia p{
+    text-align: center;
+}
+
+.adminis ul{
+    list-style: none;
+}
+
+.adminis li p{
+    text-align: justify;
+    padding-left: 3rem;
+}
+
+.adminis li::before{
+    content: "\f35a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.5rem;
+}
+
+#frec-3{
+    text-align: center;
+}
+
+.seguridad {
+    margin-top: 4rem;
+}
+
+.seguridad p{
+    text-align: center;
+}
+
+.equipo ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1rem;
+}
+
+.equipo li{
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    min-height: 2rem;
+    padding-left: 2rem;
+    min-width: 15rem;
+}
+
+.equipo li::before{
+    content: "\f7d9";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+}
+
+.medicamento, .documentacion{
+    margin-top: 4rem;
+}
+
+.medicamento p, .documentacion p{
+    text-align: center;
+}
+
+.documentacion ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1rem;
+}
+
+.documentacion li{
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    min-height: 2rem;
+    padding-left: 2rem;
+    min-width: 15rem;
+}
+
+.documentacion li p{
+    text-align: justify;
+}
+
+.documentacion li::before{
+    content: "\f21e";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+    color: rgb(233, 30, 30);
+}
+
+.moni-electro p{
+    text-align: center;
+}
+
+.img-elctro{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.moni-contra p{
+    text-align: center;
+}
+
+.bitemporal, .uld, .electrodos-tec{
+    margin-top: 3rem;
+}
+
+.bitemporal p, .uld p{
+    text-align: center;
+}
+
+.electrodos-tec img{
+    display: flex;
+    margin-top: 3rem !important;
+    margin: 0 auto;
+}
+
+.tipo, .intensidad, .algoritmo{
+    margin-top: 3rem;
+}
+
+.tipo p, .intensidad p{
+    text-align: center;
+}
+
+.algoritmo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.algoritmo img{
+    width:40rem;
+    height: 25rem;
+}
+
+.cont-dosf p, .parametros-ulduc p{
+    text-align: center;
+}
+
+.parametros-ulduc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.parametros-ulduc img{
+    width: 35rem;
+}
+
+.parametos-btc p{
+    text-align: center;
+}
+
+.btc-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.aneste-relax p{
+    text-align: center;
+}
+
+.cont-anerel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.cont-anerel2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.convulsiones p{
+    text-align: center;
+}
+
+.convulsiones img{
+    width: 38rem;
+}
+
+.conv-img img, .conv-img2 img{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.tbl-recom{
+    margin: 0 auto;
+    border-collapse: separate; /* Para separar el default de las celdas*/
+    border-spacing: 0.8rem; /* Agregar el espacio personalizado */
+}
+
+th{
+    text-align: center;
+    min-width: 12.5rem;
+    background-color: #08b568;
+    border-radius: 1rem;
+}
+
+td{
+    text-align: center;
+    min-width: 12.5rem;
+    justify-content: center;
+    background-color: #c3f3cb;
+    border-radius: 1rem;
+    padding: 1.5rem;
+}
+
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tbl-recom ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0.5rem;
+    display: grid;
+    align-items: center;
+    gap: 1rem 1rem;
+}
+
+.tbl-recom li{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.tbl-recom li::before{
+    content: "\f164";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+}
+
+.depr p{
+    text-align: center;
+}
+
+.consideraciones{
+    margin-top: 3rem;
+}
+
+.consideraciones ul{
+    list-style: none;
+    padding-left: 0;
+    margin-top: 2rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1rem;
+}
+
+.consideraciones li{
+    position: relative;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    min-height: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-width: 15rem;
+}
+
+.consideraciones li::before{
+    content: "\f0a9";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0.5rem;
+    top: 1rem;
+}
+
+/*Estilos Footer*/
+
+.pie-pagina {
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.pie-pagina::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.contenido-pie {
+    z-index: 1;
+    width: 75rem;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.creadores {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+}
+
+.santiago, .cesar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: max-content;
+    min-height: max-content;
+    text-align: center;
+}
+
+.santiago ul, .cesar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.santiago li, .cesar li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cesar li, .santiago li {
+    flex-direction: column !important;
+}
+
+.santiago p, .cesar p{
+    text-align: center;
+}
+
+.santiago img {
+    background-color: white;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+}
+
+.cesar img {
+    width: 15rem;
+    height: 5rem;
+    border-radius: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 1024px) {
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    /*Estilos Encabezado*/
+    .contenido-menu h2 {
+        margin: 0 auto;
+        width: 19rem;
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 20rem;
+    }
+
+    .contenido-menu h2 span {
+        margin-left: 2rem;
+    }
+
+    .menu-nav img {
+        width: 9rem; /* Reducción del tamaño del logo */
+        height: auto;
+        margin-left: 2rem;
+    }
+
+    .menu-nav ul {
+        gap: 1rem; /* Reduce la separación del menú para evitar cortes */
+        margin-right: 2rem;
+    }
+
+    .menu-nav ul li a {
+        font-size: 1rem; /* Ajuste de tamaño de fuente para mejor distribución */
+    }
+
+    .menu-nav ul li ul{
+        display: none;
+    }
+
+    /* Estilos Main */
+    main {
+        width: 90% !important;
+    }
+
+    .contraindicaciones{
+        gap: 1.5rem;
+    }
+
+    /*Estilos footer*/
+    .creadores {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }    
+    
+    p{
+        padding-right: 1rem !important;
+    }
+
+    /*Estilos Encabezado*/
+    .encabezado {
+        height: 100vh;
+        position: relative;
+    }
+
+    .encabezado::after {
+        height: 100vh;
+    }
+
+    .menu-nav {
+        position: relative;
+    }
+
+    .menu-nav img{
+        height: auto;
+        width: 18rem;
+    }
+
+    /* Botón hamburguesa */
+    .hamburguer {
+        display: block;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    /* Ocultar menú por defecto */
+    .menu-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(7,96,153, 0.3);
+        padding: 1rem 0;
+        text-align: center;
+        z-index: 9;
+    }
+
+    /* Mostrar menú cuando está activo */
+    .menu-nav ul.active {
+        display: flex;
+    }
+
+    .contenido-menu h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 19rem;
+        transition: margin-top 0.2s ease-in-out;
+        position: relative;
+        padding-top: 8.5rem;
+        font-weight: 900;
+    }
+
+    /* Cuando el menú está abierto, el h2 baja */
+    body.menu-abierto .contenido-menu h2 {
+        font-size: 28px;
+        margin-top: 10rem;
+        font-weight: 900;
+    }
+
+    .menu-nav ul li:hover > ul{
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.897);
+    }
+
+    /* Estilos main */
+    main {
+        width: 90%;
+    }
+
+    .contraindicaciones, .valoracion, .pym-f, .cont-anerel
+    ,.cont-anerel2 {
+        flex-direction: column;
+    }
+
+    .frecuencia{
+        margin-top: -2rem;
+    }
+
+    .parametros-ulduc img, .parametos-btc img{
+        width: 60%;
+    }
+
+    /*Estilos footer*/
+    .creadores {
+        flex-direction: column;
+        gap: 0rem;
+        align-items: center;
+    }
+
+    .santiago, .cesar {
+        width: 100%;
+        border: 1px solid rgba(128, 127, 127, 0.747);
+        border-radius: 20px;
+        margin: 1rem;
+    }
+
+    .cesar img {
+        width: 10rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .encabezado {
+        height: 100vh;
+        position: relative;
+    }
+
+    .encabezado::after {
+        height: 100vh;
+    }
+
+    .menu-nav {
+        position: relative;
+    }
+
+    .menu-nav img{
+        height: auto;
+        width: 15rem;
+    }
+
+    /* Botón hamburguesa */
+    .hamburguer {
+        display: block;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+    }
+
+    /* Ocultar menú por defecto */
+    .menu-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(7,96,153, 0.3);
+        padding: 1rem 0;
+        text-align: center;
+        z-index: 9;
+    }
+
+    /* Mostrar menú cuando está activo */
+    .menu-nav ul.active {
+        display: flex;
+    }
+
+    .contenido-menu h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 19rem;
+        transition: margin-top 0.2s ease-in-out;
+        position: relative;
+        padding-top: 10rem;
+    }
+
+    .contenido-menu h2 span{
+        margin-left: 2rem;
+    }
+
+    /* Cuando el menú está abierto, el h2 baja */
+    body.menu-abierto .contenido-menu h2 {
+        margin-top: 9rem;
+    }
+
+    .menu-nav ul li:hover > ul{
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.897);
+    }
+
+    /* Estilos Main */
+    main {
+        width: 80% !important;
+        padding: 1rem;
+    }
+
+    .contraindicaciones li{
+        min-width: 80% !important;
+    }
+
+    .img-elctro{
+        flex-direction: column;
+    }
+
+    .electrodos-tec img, .parametros-ulduc img, .btc-img img
+    , .conv-img img, .conv-img2 img{
+        width: 100%;
+    }
+
+    .algoritmo img{
+        width: 120%;
+        height: 120%;
+    }
+
+    .parametros-ulduc, .btc-img{
+        flex-direction: column;
+    }
+
+    .tbl-recom{
+        border-spacing: 0.5rem;
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+
+    /*Estilos footer*/
+    .contenido-pie {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .creadores {
+        gap: 1rem;
+    }
+
+    .santiago p, .cesar p {
+        font-size: 0.9rem;
+    }
+
+    .santiago, .cesar{
+        width: 80%;
+        min-width: 70%;
+        border: 1px solid rgba(128, 127, 127, 0.747);
+        border-radius: 20px;
+    }
+
+    .santiago li, .cesar li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cesar img {
+        width: 10rem;
+        height: 4rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+}

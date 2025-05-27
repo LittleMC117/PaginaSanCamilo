@@ -1,0 +1,984 @@
+/*Estilos generales*/
+html, body {
+    font-family: "Montserrat Alternates", serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+button{
+    background: white;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    color: var(--azul);
+    margin-left: 1rem;
+    margin-top: 5rem !important;
+}
+
+:root{
+    --azul: rgba(7,96,153,255);
+    --verde: rgb(103,185,62);
+}
+
+*,*:before,*:after{
+    box-sizing: inherit; /*Para usar todo el ancho y alto*/
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h4{
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*Estilo para animación de scroll*/
+.animado {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Estilos Header*/
+.encabezado{
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/encabezados/encabezado-antidepresivos.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.encabezado::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.contenido-menu{
+    position: relative;
+    max-width: 1200px;
+    max-height: 100vh;
+    margin: 0 auto;
+    color: white;
+    z-index: 1;
+    flex-direction: column;
+    line-height: 2;
+    padding-top: 1rem;
+}
+
+.contenido-menu h2{
+    margin-top: 18rem;
+    margin-left: 15rem;
+    width: 20rem;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 25px rgba(255, 255, 255, 1);
+}
+
+.contenido-menu h2 span{
+    margin-left: 8rem;
+}
+
+/*Estilos barra de Navegación*/
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.hamburguer{
+    display: none;
+}
+
+.menu-nav img{
+    width: 16rem;
+    height: 4.5rem;
+}
+
+.menu-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los elementos en una fila */
+    gap: 1.5rem;
+}
+
+.menu-nav ul li{
+    position: relative;
+}
+
+.menu-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    display: block;
+    background-color: transparent;
+}
+
+.menu-nav ul li a:hover{
+    color: var(--verde);
+}
+
+.menu-nav ul li ul {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    padding-top: 0.7rem;
+    list-style: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 50%; /* Centra el submenú respecto al elemento padre */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    width: 7.5rem;
+    border-radius: 15px;
+}
+
+.menu-nav ul li:hover > ul {
+    display: block;
+}
+
+/*Diseños Sub-menunavegación*/
+
+.menu-nav ul li ul li a{
+    font-weight: 800;
+    font-size: 0.87rem;
+    text-align: center;
+}
+
+.menu-nav ul li ul li a:hover{
+    color: var(--azul);
+}
+
+/*Estilos Main*/
+
+main{
+    width: 75rem;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.p-intr{
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.p-intr p{
+    text-align: center;
+}
+
+.grp{
+    margin-top: 2rem;
+}
+
+.grp ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 3rem;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.grp ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    min-height: 50px;
+    font-weight: 700;
+}
+
+.p-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-3{
+    margin-top: 3rem;
+}
+
+.p-3 p{
+    text-align: center;
+}
+
+.tri-tet{
+    margin-top: 5rem;
+}
+
+.tri-tet h2, .irsn h2{
+    color: var(--azul);
+    font-weight: 800;
+    text-shadow: 0px 2px 3px rgba(7,96,153,255); 
+}
+
+.icono {
+    display: flex; /* Activa flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 2.8rem; /* Ajusta el tamaño del círculo */
+    width: 2.8rem; /* Hace que sea un círculo perfecto */
+    font-size: 1.5rem; /* Ajusta el tamaño del icono */
+}
+
+.d{
+    margin-top: 3rem;
+}
+
+.d ul{
+    display: flex;
+    align-items: center;
+    gap: 20rem;
+}
+
+.d ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.p-c{
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.p{
+    width: calc(50%);
+}
+
+.c{
+    width: calc(50%);
+}
+
+.p li, .c li{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.p li p, .c li p{
+    width: 80%;
+}
+
+.ir-medicamentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20rem;
+    margin-top: 3rem;
+}
+
+.ir-medicamentos h2{
+    color: black !important;
+    text-shadow: none !important;
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+.tarjeta-medicamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(33.33% - 5rem);
+    height: 15rem; /* Agrega una altura fija */
+    border-radius: 2rem;
+    margin-top: 2rem;
+    box-shadow: 3px 2px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    background-color: white; /* Asegura que el fondo sea visible */
+}
+
+.tarjeta-medicamento img{
+    width: 10rem;
+    height: 10rem;
+}
+
+.tarjeta-medicamento h2{
+    font-size: 16px;
+}
+
+.tarjeta-medicamento .vuelta {
+    width: 80%;
+    height: 50%;
+    position: relative;
+    transform-style: preserve-3d; /* Aquí está la corrección */
+    transition: transform 1s;
+}
+
+.tarjeta-medicamento:hover .vuelta{
+    transform: rotateY(180deg);
+}
+
+.frente, .atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.atras{
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    text-align: center; /* Asegura que el texto quede centrado */
+    transform: rotateY(180deg);
+    border-radius: 2rem;
+    padding: 1rem;
+    box-sizing: border-box; /* Evita que el padding desborde el contenido */
+}
+
+.atras p{
+    text-align: center;
+}
+
+.ir-medicamentos .boton{
+    margin-top: 1rem;
+}
+
+.boton-TT, .boton-IRSN{
+    width: 10rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background: var(--azul);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border: none;
+    min-height: 3rem;
+    margin-top: -0.5rem !important;
+}
+
+.boton-TT a, .boton-IRSN a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.boton-TT a:hover, .boton-IRSN a:hover{
+    color: white;
+}
+
+.isrsp-1{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.isrsp-1 h2, .at h2{
+    color: var(--verde);
+    font-weight: 800;
+    text-shadow: 0px 2px 3px rgb(150, 240, 105);
+}
+
+.isrsi-e{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.isrs-i, .isrs-e{
+    width: calc(50% - 2rem);
+}
+
+.isrs-i ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+}
+
+.isrs-i li{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem;
+    margin: 1rem;
+}
+
+.isrs-i li p{
+    width: 80%;
+    text-align: center;
+}
+
+.isrs-e p{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.boton-ISRS{
+    width: 10rem;
+    margin: 0 auto;
+    margin-top: -0.2rem !important;
+    border-radius: 2rem;
+    background: var(--verde);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    border: none;
+    min-height: 3rem;
+}
+
+.boton-ISRS a{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.boton-ISRS a:hover{
+    color: white;
+}
+
+.irsn-p {
+    margin-top: 3rem !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.irsni-e{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.irsn-i, .irsn-e{
+    width: calc(50%);
+}
+
+.irsn-i li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.irsn-i p{
+    width: 80%;
+}
+
+.irsn-e ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.irsn-e li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.irsn-e p{
+    width: 80%;
+    text-align: center;
+}
+
+.at-p{
+    margin-top: 1rem;
+}
+
+.at-e li{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+/*Estilos Footer*/
+
+.pie-pagina {
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.pie-pagina::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.contenido-pie {
+    z-index: 1;
+    width: 75rem;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.creadores {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+}
+
+.santiago, .cesar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: max-content;
+    min-height: max-content;
+    text-align: center;
+}
+
+.santiago ul, .cesar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.santiago li, .cesar li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cesar li, .santiago li {
+    flex-direction: column !important;
+}
+
+.santiago p, .cesar p{
+    text-align: center;
+}
+
+.santiago img {
+    background-color: white;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+}
+
+.cesar img {
+    width: 15rem;
+    height: 5rem;
+    border-radius: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 1024px) {
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    /*Estilos Encabezado*/
+    .contenido-menu h2 {
+        margin: 0 auto;
+        width: 19rem;
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 20rem;
+    }
+
+    .contenido-menu h2 span {
+        margin-left: 2rem;
+    }
+
+    .menu-nav img {
+        width: 9rem; /* Reducción del tamaño del logo */
+        height: auto;
+        margin-left: 2rem;
+    }
+
+    .menu-nav ul {
+        gap: 1rem; /* Reduce la separación del menú para evitar cortes */
+    }
+
+    .menu-nav ul li a {
+        font-size: 1rem; /* Ajuste de tamaño de fuente para mejor distribución */
+    }
+
+    .menu-nav ul li ul{
+        display: none;
+    }
+
+    /*Estilos Main*/
+    main {
+        width: 90%;
+    }
+    .grp ul {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .tarjetas {
+        flex-wrap: wrap;
+    }
+    .tarjeta-medicamento {
+        width: calc(33.33% - 2rem);
+    }
+
+    /*Estilos footer*/
+    .creadores {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }    
+    
+    /*Estilos Encabezado*/
+    .encabezado {
+        height: 100vh;
+        position: relative;
+    }
+
+    .encabezado::after {
+        height: 100vh;
+    }
+
+    .menu-nav {
+        position: relative;
+    }
+
+    .menu-nav img{
+        height: auto;
+        width: 18rem;
+    }
+
+    /* Botón hamburguesa */
+    .hamburguer {
+        display: block;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    /* Ocultar menú por defecto */
+    .menu-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(7,96,153, 0.3);
+        padding: 1rem 0;
+        text-align: center;
+        z-index: 9;
+    }
+
+    /* Mostrar menú cuando está activo */
+    .menu-nav ul.active {
+        display: flex;
+    }
+
+    .contenido-menu h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 19rem;
+        transition: margin-top 0.2s ease-in-out;
+        position: relative;
+        padding-top: 10rem;
+        font-weight: 900;
+    }
+
+    /* Cuando el menú está abierto, el h2 baja */
+    body.menu-abierto .contenido-menu h2 {
+        font-size: 28px;
+        margin-top: 10rem;
+        font-weight: 900;
+    }
+
+    .menu-nav ul li:hover > ul{
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.897);
+    }
+
+    /* Estilos Main */
+
+    .p-c {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .p, .c {
+        width: 100%;
+    }
+    .isrs-i ul, .irsn-e ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tarjeta-medicamento {
+        width: 100%;
+        width: calc(33.33% - 2rem);
+    }
+
+    /*Estilos footer*/
+    .creadores {
+        flex-direction: column;
+        gap: 0rem;
+        align-items: center;
+    }
+
+    .santiago, .cesar {
+        width: 100%;
+        border: 1px solid rgba(128, 127, 127, 0.747);
+        border-radius: 20px;
+        margin: 1rem;
+    }
+
+    .cesar img {
+        width: 10rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .encabezado {
+        height: 100vh;
+        position: relative;
+    }
+
+    .encabezado::after {
+        height: 100vh;
+    }
+
+    .menu-nav {
+        position: relative;
+    }
+
+    .menu-nav img{
+        height: auto;
+        width: 15rem;
+    }
+
+    /* Botón hamburguesa */
+    .hamburguer {
+        display: block;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+    }
+
+    /* Ocultar menú por defecto */
+    .menu-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(7,96,153, 0.3);
+        padding: 1rem 0;
+        text-align: center;
+        z-index: 9;
+    }
+
+    /* Mostrar menú cuando está activo */
+    .menu-nav ul.active {
+        display: flex;
+    }
+
+    .contenido-menu h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 19rem;
+        transition: margin-top 0.2s ease-in-out;
+        position: relative;
+        padding-top: 10rem;
+    }
+
+    .contenido-menu h2 span{
+        margin-left: 2rem;
+    }
+
+    /* Cuando el menú está abierto, el h2 baja */
+    body.menu-abierto .contenido-menu h2 {
+        margin-top: 10rem;
+    }
+
+    .menu-nav ul li:hover > ul{
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.897);
+    }
+
+    /*Estilo Main*/
+    .d ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .d ul li {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .icono {
+        width: 2rem;
+        height: 2rem;
+        font-size: 1.2rem;
+    }
+    .boton-TT, .boton-IRSN, .boton-ISRS {
+        width: 100%;
+    }
+    .tarjeta-medicamento img{
+        width: 50%;
+        height: 50%;
+    }
+    .tarjeta-medicamento h2{
+        font-size: 10px;
+    }
+    .atras p{
+        font-size: 0.8rem;
+    }
+    .isrsi-e, .irsni-e{
+        flex-direction: column;
+        width: 100%;
+        align-items: normal !important;
+    }
+    .isrs-i ul, .irsn-e ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .isrs-i h3{
+        margin-left: 8rem;
+    }
+    .isrs-e p{
+        width: 20rem;
+        margin-left: 4.5rem;
+    }
+    .isrs-e h3{
+        margin-left: 10rem;
+    }
+    .irsn-i{
+        margin-left: 3rem;
+    }
+    .irsn-i h3{
+        margin-left: 5rem;
+    }
+    .irsn-e h3{
+        margin-left: 10rem;
+    }
+    .irsn-e ul{
+        margin-left: 3rem;
+    }
+
+    /*Estilos footer*/
+    .contenido-pie {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .creadores {
+        gap: 1rem;
+    }
+
+    .santiago p, .cesar p {
+        font-size: 0.9rem;
+    }
+
+    .santiago, .cesar{
+        width: 80%;
+        min-width: 70%;
+        border: 1px solid rgba(128, 127, 127, 0.747);
+        border-radius: 20px;
+    }
+
+    .santiago li, .cesar li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cesar img {
+        width: 10rem;
+        height: 4rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,894 @@
+/*Estilos generales*/
+html, body {
+    font-family: "Montserrat Alternates", serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+button{
+    background: white;
+    border-radius: 2rem;
+    height: 2rem;
+    width: 2rem;
+    cursor: pointer;
+    color: var(--azul);
+    margin-left: 1rem;
+    margin-top: 1rem !important;
+}
+
+:root{
+    --azul: rgba(7,96,153,255);
+    --verde: rgb(103,185,62);
+    --lavanda: rgb(155, 89, 182);
+}
+
+*,*:before,*:after{
+    box-sizing: inherit; /*Para usar todo el ancho y alto*/
+}
+
+p{
+    text-align: justify;
+}
+
+h2{
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h4{
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*Estilo para animación de scroll*/
+.animado {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Estilos Header*/
+.encabezado{
+    position: relative;
+    height: 100vh;
+    background-image: url(../img/encabezados/encabezado-ansioliticos-medicamentos.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.encabezado::after{
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.contenido-menu{
+    position: relative;
+    max-width: 1200px;
+    max-height: 100vh;
+    margin: 0 auto;
+    color: white;
+    z-index: 1;
+    flex-direction: column;
+    line-height: 2;
+    padding-top: 1rem;
+}
+
+.contenido-menu h2{
+    margin-top: 14rem;
+    margin-left: 15rem;
+    width: max-content;
+    font-size: 2.5rem;
+    text-shadow: 3px 3px 25px rgba(255, 255, 255, 1);
+}
+
+/*Estilos barra de Navegación*/
+.menu-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-right: 1rem;
+}
+
+.hamburguer{
+    display: none;
+}
+
+.menu-nav img{
+    width: 18rem;
+    height: 4.5rem;
+}
+
+.menu-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinea los elementos en una fila */
+    gap: 1.5rem;
+}
+
+.menu-nav ul li{
+    position: relative;
+}
+
+.menu-nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+    display: block;
+    background-color: transparent;
+}
+
+.menu-nav ul li a:hover{
+    color: var(--verde);
+}
+
+.menu-nav ul li ul {
+    display: none;
+    position: absolute;
+    background: rgba(255, 255, 255, 0.6);
+    padding-top: 0.7rem;
+    list-style: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    top: 100%;
+    left: 50%; /* Centra el submenú respecto al elemento padre */
+    transform: translateX(-50%); /* Ajusta el centrado */
+    width: 7.5rem;
+    border-radius: 15px;
+}
+
+.menu-nav ul li:hover > ul {
+    display: block;
+}
+
+/*Diseños Sub-menunavegación*/
+
+.menu-nav ul li ul li a{
+    font-weight: 800;
+    font-size: 0.87rem;
+    text-align: center;
+}
+
+.menu-nav ul li ul li a:hover{
+    color: var(--azul);
+}
+
+/*Estilos tarjetas*/
+main {
+    position: relative; /* Asegura que los botones se posicionen dentro de main */
+}
+
+.fondo-tarjeta {
+    width: 75rem;
+    height: 126vh;
+    margin: 0 auto;
+    margin-top: 5rem;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo-tarjeta {
+    display: none;
+}
+.fondo-tarjeta.active {
+    display: block;
+}
+.nav-button {
+    position: absolute;
+    top: 50%; /* Mantiene la posición a la mitad de main */
+    transform: translateY(-50%); /* Ajuste fino para centrar verticalmente */
+    background: var(--lavanda);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2; /* Asegura que estén sobre otros elementos */
+}
+#prev { left: 10px; }
+#next { right: 10px; }
+
+.fondo-medicamento {
+    display: flex;
+    align-items: stretch; /* Asegura que ambas columnas tengan la misma altura */
+    justify-content: center;
+}
+
+.izquierda, .derecha {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ambas columnas ocupan el mismo espacio */
+    min-height: 100%; /* Se extienden al máximo de su contenedor */
+}
+
+.izquierda{
+    border: 1px solid black;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background: #e5e8e8;
+    border-radius: 3rem;
+    width: calc(50% - 3rem);
+    font-size: 1rem;
+    align-items: stretch;
+}
+
+.izquierda h2{
+    color: var(--lavanda);
+    text-shadow: 0px 0px 5px rgb(167, 69, 231);
+}
+
+.izquierda-primero{
+    display: flex;
+    align-items: center;
+}
+
+.izquierda-primero img{
+    width: 13rem;
+    height: 9rem;
+    padding-right: 1.5rem;
+}
+
+.izquierda-primero p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 80%;
+}
+
+.referencia{
+    margin-top: 0.1rem;
+    font-style: italic;
+    font-size: 10px;
+    padding-left: 22rem;
+}
+
+.izquierda h3{
+    margin-top: -0.5rem;
+    color: var(--lavanda);
+    text-shadow: 0px 0px 5px rgb(231, 231, 231);
+    font-size: 1rem;
+    text-align: justify;
+    padding-left: 1rem;
+}
+
+.izquierda p{
+    padding-left: 1rem;
+    padding-right: 2.5rem;
+    font-size: 15px;
+}
+
+.izquierda-segundo {
+    padding-top: 2rem;
+    display: flex;
+    align-items: flex-start; /* Alinea los cuadros en la parte superior */
+    justify-content: center;
+    gap: 2rem; /* Espacio entre cuadros */
+    margin: 0 auto;
+    max-width: 600px; /* Limita el ancho total para evitar que se expandan demasiado */
+    flex-wrap: nowrap; /* Evita que pasen a la siguiente línea */
+}
+
+.contenido-indicaciones,
+.contenido-contraindicaciones {
+    border-radius: 2rem;
+    border: 2px solid var(--lavanda);
+    padding: 1rem;
+    width: 250px; /* Tamaño fijo para que no ocupen todo el ancho */
+    text-align: center;
+    font-size: 12px;
+}
+
+.contenido-indicaciones{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contenido-indicaciones h3{
+    text-align: center;
+}
+
+.contenido-indicaciones p{
+    width: 80%;
+    padding-left: 1rem;
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 1rem;
+}
+
+.contenido-contraindicaciones{
+    margin: 0 auto ;
+    margin-right: 3rem;
+    height: 70%;
+}
+
+.contenido-contraindicaciones h3{
+    text-align: center;
+}
+
+.contenido-contraindicaciones p{
+    width: 80%;
+    padding-left: 1rem;
+    text-align: center;
+    font-size: 12px;
+}
+
+.derecha{
+    margin-top: 1rem;
+    margin-right: 1rem;
+    background: #e5e8e8;
+    border-radius: 3rem;
+    width: calc(50% - 3rem);
+    font-size: 1rem;
+    align-items: stretch;
+}
+
+.contenido-presentaciones{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contenido-presentaciones h3{
+    padding-left: 1rem;
+    color: var(--lavanda);
+    font-size: 1.2rem;
+}
+
+.contenido-presentaciones li{
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contenido-dosis{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: -1rem !important;
+}
+
+.contenido-dosis h3{
+    padding-left: 1rem;
+    color: var(--lavanda);
+    font-size: 1.2rem;
+}
+
+.contenido-dosis li{
+    list-style: none;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.derecha h3{
+    color: var(--lavanda);
+    text-shadow: 0px 0px 5px rgb(221, 221, 221);
+    font-size: 1.2rem;
+}
+
+.derecha ul{
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 1rem;
+}
+
+.derecha p{
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    font-size: 15px;
+}
+
+/*Estilos Footer*/
+
+.pie-pagina {
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    color: white;
+    padding: 2rem 1rem;
+}
+
+.pie-pagina::after {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.contenido-pie {
+    z-index: 1;
+    width: 75rem;
+    max-width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.creadores {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10rem;
+    width: 100%;
+}
+
+.santiago, .cesar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    min-width: max-content;
+    min-height: max-content;
+    text-align: center;
+}
+
+.santiago ul, .cesar ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.santiago li, .cesar li {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cesar li, .santiago li {
+    flex-direction: column !important;
+}
+
+.santiago p, .cesar p{
+    text-align: center;
+}
+
+.santiago img {
+    background-color: white;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 10px;
+}
+
+.cesar img {
+    width: 15rem;
+    height: 5rem;
+    border-radius: 10px;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 1024px) {
+
+    
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    /*Estilos Encabezado*/
+    .contenido-menu h2 {
+        margin: 0 auto;
+        width: 19rem;
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 20rem;
+    }
+
+    .contenido-menu h2 span {
+        margin-left: 2rem;
+    }
+
+    .menu-nav img {
+        width: 9rem; /* Reducción del tamaño del logo */
+        height: auto;
+        margin-left: 2rem;
+    }
+
+    .menu-nav ul {
+        gap: 1rem; /* Reduce la separación del menú para evitar cortes */
+    }
+
+    .menu-nav ul li a {
+        font-size: 1rem; /* Ajuste de tamaño de fuente para mejor distribución */
+    }
+
+    .menu-nav ul li ul{
+        display: none;
+    }
+
+    /*Estilos Main*/
+
+    .fondo-tarjeta {
+        width: 90%; /* Reduce el ancho de la tarjeta */
+        height: auto;
+        margin-top: 3rem;
+        padding: 2rem;
+    }
+
+    .fondo-medicamento {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .izquierda, .derecha {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .izquierda-primero img {
+        width: 10rem;
+        height: auto;
+    }
+
+    .referencia {
+        padding-left: 40rem;
+    }
+
+    .izquierda-segundo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenido-indicaciones, .contenido-contraindicaciones {
+        width: 45%;
+        margin: 0 auto;
+    }
+
+    /*Estilos footer*/
+    .creadores {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }    
+    
+    /*Estilos Encabezado*/
+    .encabezado {
+        height: 100vh;
+        position: relative;
+    }
+
+    .encabezado::after {
+        height: 100vh;
+    }
+
+    .menu-nav {
+        position: relative;
+    }
+
+    .menu-nav img{
+        height: auto;
+        width: 10rem;
+    }
+
+    /* Botón hamburguesa */
+    .hamburguer {
+        display: block;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    /* Ocultar menú por defecto */
+    .menu-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(7,96,153, 0.3);
+        padding: 1rem 0;
+        text-align: center;
+        z-index: 9;
+    }
+
+    /* Mostrar menú cuando está activo */
+    .menu-nav ul.active {
+        display: flex;
+    }
+
+    .contenido-menu h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 19rem;
+        transition: margin-top 0.2s ease-in-out;
+        position: relative;
+        padding-top: 10rem;
+        font-weight: 900;
+    }
+
+    /* Cuando el menú está abierto, el h2 baja */
+    body.menu-abierto .contenido-menu h2 {
+        font-size: 1rem;
+        margin-top: 12rem;
+        font-weight: 900;
+    }
+
+    .menu-nav ul li:hover > ul{
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.897);
+    }
+
+    /*Estilos Main*/
+
+    .fondo-tarjeta {
+        width: 95%;
+        margin-top: 2rem;
+        padding: 1.5rem;
+    }
+
+    .nav-button {
+        top: auto;
+        bottom: 10px;
+        transform: none;
+    }
+
+    .fondo-medicamento {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .izquierda, .derecha {
+        width: 95%;
+        margin: 1rem auto;
+        font-size: 0.9rem;
+    }
+
+    .izquierda-primero img {
+        width: 8rem;
+        height: auto;
+    }
+
+    .referencia {
+        padding-left: 35rem;
+    }
+
+    .contenido-indicaciones, .contenido-contraindicaciones {
+        width: 90%;
+    }
+
+    /*Estilos footer*/
+    .creadores {
+        flex-direction: column;
+        gap: 0rem;
+        align-items: center;
+    }
+
+    .santiago, .cesar {
+        width: 100%;
+        border: 1px solid rgba(128, 127, 127, 0.747);
+        border-radius: 20px;
+        margin: 1rem;
+    }
+
+    .cesar img {
+        width: 10rem;
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .encabezado {
+        height: 100vh;
+        position: relative;
+    }
+
+    .encabezado::after {
+        height: 100vh;
+    }
+
+    .menu-nav {
+        position: relative;
+    }
+
+    .menu-nav img{
+        height: auto;
+        width: 15rem;
+    }
+
+    /* Botón hamburguesa */
+    .hamburguer {
+        display: block;
+        font-size: 1.2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 1rem;
+        z-index: 10;
+        background: rgba(255, 255, 255, 0.3);
+        color: white;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        margin-top: 0.5rem;
+    }
+
+    /* Ocultar menú por defecto */
+    .menu-nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(7,96,153, 0.3);
+        padding: 1rem 0;
+        text-align: center;
+        z-index: 9;
+    }
+
+    /* Mostrar menú cuando está activo */
+    .menu-nav ul.active {
+        display: flex;
+    }
+
+    .contenido-menu h2 {
+        font-size: 2rem;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 19rem;
+        transition: margin-top 0.2s ease-in-out;
+        position: relative;
+        padding-top: 10rem;
+    }
+
+    .contenido-menu h2 span{
+        margin-left: 2rem;
+    }
+
+    /* Cuando el menú está abierto, el h2 baja */
+    body.menu-abierto .contenido-menu h2 {
+        margin-top: 12rem;
+    }
+
+    .menu-nav ul li:hover > ul{
+        display: flex;
+        background-color: rgba(20, 20, 20, 0.897);
+    }
+
+    /*Estilos Main*/
+
+    .fondo-tarjeta {
+        width: 90%;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-button {
+        display: flex;
+        justify-content: center;
+        gap: 1rem; /* Espacio entre botones */
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+        width: 1rem;
+        height: 1rem;
+    }
+    
+    #next{
+        margin-left: 13rem;
+    }
+
+    #prev{
+        margin-left: 1rem;
+    }
+
+    /* Ocultar los botones por defecto */
+    .nav-buttons.hidden {
+        display: none;
+    }
+
+    .fondo-medicamento {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .izquierda, .derecha {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .izquierda-primero img {
+        width: 6rem;
+    }
+
+    .referencia {
+        padding-left: 22rem;
+        font-size: 8px;
+    }
+
+    .contenido-indicaciones, .contenido-contraindicaciones {
+        width: 100%;
+    }
+
+    .contenido-presentaciones {
+        flex-direction: column;
+    }
+
+    /*Estilos footer*/
+    .contenido-pie {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    .creadores {
+        gap: 1rem;
+    }
+
+    .santiago p, .cesar p {
+        font-size: 0.9rem;
+    }
+
+    .santiago, .cesar{
+        width: 80%;
+        min-width: 70%;
+        border: 1px solid rgba(128, 127, 127, 0.747);
+        border-radius: 20px;
+    }
+
+    .santiago li, .cesar li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cesar img {
+        width: 10rem;
+        height: 4rem;
+    }
+
+    h4 {
+        font-size: 0.8rem;
+    }
+}

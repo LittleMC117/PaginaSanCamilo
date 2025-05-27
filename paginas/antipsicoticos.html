@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antipsicóticos</title>
+    <link rel="stylesheet" href="../css/style-antipsicoticos.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="../js/script-generales.js"></script>
+    <script src="../js/script-contenido.js"></script>
+    <script src="../js/script-audio.js"></script>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <section class="encabezado">
+            <section class="contenido-menu">
+                <section class="menu-nav">
+                    <!-- Botón hamburguesa -->
+                    <div class="hamburguer">
+                        ☰
+                    </div>
+                    <!--Logo página (vuelve al inicio)-->
+                    <a href="../index.html">
+                        <img src="../img/LogoSanCamilo.png" alt="Logo Proyecto">
+                    </a>
+
+                    <!--Barra de navegación despleglable-->
+                    <ul>
+                        <li>
+                            <a href="../paginas/patologias.html">Patologias</a>
+                            <ul>
+                                <li><a href="../paginas/patologias.html#TP">Trastornos Psicoticos</a></li>
+                                <li><a href="../paginas/patologias.html#TEA">Trastornos del Estado de Animo</a></li>
+                                <li><a href="../paginas/patologias.html#TA">Trastornos de Ansiedad</a></li>
+                                <li><a href="../paginas/patologias.html#ADS">Abuso y Dependencia de Sustancias</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../paginas/antipsicoticos.html">Antipsicóticos</a>
+                            <ul>
+                                <li><a href="../paginas/antipsicoticos.html#Tipicos">Tipicos</a></li>
+                                <li><a href="../paginas/antipsicoticos.html#Atipicos">Atipicos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../paginas/antidepresivos.html">Antidepresivos</a>
+                            <ul>
+                                <li><a href="../paginas/antidepresivos.html#TT">Triciclicos & Tetraciclicos</a></li>
+                                <li><a href="../paginas/antidepresivos.html#ISRS">ISRS</a></li>
+                                <li><a href="../paginas/antidepresivos.html#IRSN">IRSN</a></li>
+                                <li><a href="../paginas/antidepresivos.html#Atipicos">Atipicos</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="../paginas/eutimizantes.html">Eutimizantes</a>
+                        </li>
+                        <li>
+                            <a href="../paginas/ansioliticos.html">Ansioliticos</a>
+                        </li>
+                        <li>
+                            <a href="">Más</a>
+                            <ul>                                
+                                <li><a href="../paginas/contencion.html">Contención Mecánica</a></li>
+                                <li><a href="../paginas/tecar.html">TECAR</a></li>
+                                <li><a href="../paginas/bibliografia.html">Referencias</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <h2>Antipsicóticos</span></h2>
+            </section>
+        </section>
+    </header>
+
+    <main class="animado">
+        <section class="ant-cont">
+            <button class="playPause animado">
+                <span><i class="fa-solid fa-play"></i></span>
+            </button>
+            <button class="reset animado">
+                <span><i class="fa-solid fa-rotate-right"></i></span>
+            </button>
+            
+            <h3 class="animado">Antipsicóticos</h3>
+            <section class="contenido-inicial">
+                    <section class="acciones">
+                        <h3 class="animado">Acciones</h3>
+                        <p class="animado" id="acciones"></p>
+                    </section>
+    
+                    <section class="indicaciones">
+                        <h3 class="animado">Indicaciones</h3>
+                        <p class="animado" id="indicaciones"></p>
+                    </section>
+            </section>
+
+            <section class="contenido-segundo">
+                <section class="contraindicaciones">
+                    <h3 class="animado">Contraindicaciones</h3>
+                    <p class="animado" id="contraindicaciones"></p>
+                </section>
+            
+                <section class="efectos-adversos">
+                    <h3 class="animado">Efectos Adversos</h3>
+                    <p class="animado" id="efectos"></p>
+                </section>
+    
+                <section class="tox-rela">
+                    <h4 class="animado">Toxicidad Relacionada con la Dosis</h4>
+                    <p class="animado" id="toxicidad"></p>
+                </section>
+            </section>
+        </section>
+
+        <section class="anticolinergico">
+            <button class="playPause animado">
+                <span><i class="fa-solid fa-play"></i></span>
+            </button>
+            <button class="reset animado">
+                <span><i class="fa-solid fa-rotate-right"></i></span>
+            </button>
+
+            <section class="efectos-anti">
+                <h4 class="animado">Efectos Anticolinérgicos</h4>
+                <ul>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-poop" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="estreñimiento"></p>          
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-smile" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="sequedad"></p>
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-head-side-cough" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="congestion"></p>                    
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-eye-low-vision" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="vision"></p>
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-eye" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="midriasis"></p>
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-droplet" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="hipotension"></p>
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-heart-pulse" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="taquicardia"></p>
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-faucet-drip" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="retencion"></p>
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-syringe" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="sedacion"></p>
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fas fa-weight" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="aumento"></p>
+                    </li>
+                    <li class="animado">
+                        <span class="icono">
+                            <i class="fa-solid fa-cubes-stacked" style="color: #076099;"></i>
+                        </span>
+                        <p class="animado" id="diabetes"></p>
+                    </li>
+                    <li class="animado">
+                    <span class="icono">
+                            <i class="fa-solid fa-heart-circle-exclamation" style="color: #076099;"></i>
+                        </span> 
+                        <p class="animado" id="agranulocitosis"></p>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="extrapiramidal">
+            <button class="playPause animado">
+                <span><i class="fa-solid fa-play"></i></span>
+            </button>
+            <button class="reset animado">
+                <span><i class="fa-solid fa-rotate-right"></i></span>
+            </button>
+
+            <section class="efectos-extra">
+                <h3 class="animado">Efectos Extrapiramidales</h3>
+                <p class="animado" id="efectos-extra"></p>
+    
+                <section class="contenido-efectextra">
+                    <ul>
+                        <li class="animado"> <span class="icono"><i class="fa-solid fa-triangle-exclamation" style="color: #67b93e;"></i></span>
+                            <section class="n">
+                                <span>Distonía aguda:</span> 
+                                <p class="animado" id="distonia"></p>
+                            </section>
+                        </li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-triangle-exclamation" style="color: #67b93e;"></i></span>
+                            <section class="n">
+                                <span>Acatisia:</span>
+                                <p class="animado" id="acatisia"></p>
+                            </section>
+                        </li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-triangle-exclamation" style="color: #67b93e;"></i></span>
+                            <section class="n">
+                                <span>Acinesia:</span>
+                                <p class="animado" id="acinesia"></p>
+                            </section> 
+                        </li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-triangle-exclamation" style="color: #67b93e;"></i></span>
+                            <section class="n">
+                                <span>Parkinsonismo:</span>
+                                <p class="animado" id="parkinson"></p>
+                            </section>
+                        </li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-triangle-exclamation" style="color: #67b93e;"></i></span>
+                            <section class="n">
+                                <span>Discinesia tardía:</span>
+                                <p class="animado" id="discinesia"></p>
+                            </section>
+                        </li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-triangle-exclamation" style="color: #67b93e;"></i></span>
+                            <section class="n">
+                                <span>Síndrome neuroléptico maligno:</span>
+                                <p class="animado" id="sindrome-neuroleptico"></p>
+                            </section>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+        </section>
+        
+
+        <section class="conydecir">
+            <button class="playPause animado">
+                <span><i class="fa-solid fa-play"></i></span>
+            </button>
+            <button class="reset animado">
+                <span><i class="fa-solid fa-rotate-right"></i></span>
+            </button>
+
+            <section class="contenido-tercero">
+                <section class="consideraciones">
+                    <h3 class="animado">Consideraciones de enfermería</h3>
+                    <p class="animado" id="consideraciones"></p>
+    
+                    <ul>
+                        <li class="animado"><p id="revision"></p></li>
+                        <li class="animado"><p id="evaluar"></p></li>
+                        <li class="animado"><p id="control"></p></li>
+                        <li class="animado"> <p id="valoracion"></p></li>
+                        <li class="animado"><p id="recuento"></p></li>
+                    </ul>
+                </section>
+    
+                <section class="decir">
+                    <h3 class="animado">¿Qué podemos decirle al paciente respecto al tratamiento?</h3>
+                    <li class="animado"><p id="mejorar"></p></li>
+                    <li class="animado"><p id="prescrito"></p></li>
+                    <li class="animado"><p id="levantarse"></p></li>
+                    <li class="animado"><p id="informar"></p> </li>
+                    <li class="animado"><p id="hablar"></p></li>
+                </section>
+        </section>
+        
+
+        <section class="medicamentos">
+            <button class="playPause animado">
+                <span><i class="fa-solid fa-play"></i></span>
+            </button>
+            <button class="reset animado">
+                <span><i class="fa-solid fa-rotate-right"></i></span>
+            </button>
+
+            <h2 class="animado">Grupo de medicamentos Antipsicóticos</h2>
+
+            <section class="med-tipicos">
+                <h3 class="animado" id="Tipicos">Típicos</h3>
+                <p class="animado" id="conttipicos"></p>
+                <!--Aqui va las tarjetas de los medicamnetos-->
+                <section class="ir-medicamentos">
+                    <section class="tarjetas">
+                        <section class="tarjeta-medicamento animado">
+                            <section class="vuelta">
+                                <section class="frente">
+                                    <img src="../img/medicamentos/clorpromazina.png" alt="Imagen de referencia" class="animado">
+                                    <h2 class="nombre-medicamento animado">Clorpromazina</h2>
+                                </section>
+                                <section class="atras">
+                                    <p>Antipsicótico de fenotiazina que se usa para tratar náuseas, vómitos, ansiedad, esquizofrenia,
+                                        trastorno bipolar y problemas graves de conducta en niños.</p>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class="tarjeta-medicamento animado">
+                            <section class="vuelta">
+                                <section class="frente">
+                                    <img src="../img/medicamentos/Haloperidol.png" alt="Imagen de referencia" class="animado">
+                                    <h2 class="nombre-medicamento animado">Haloperidol</h2>
+                                </section>
+                                <section class="atras">
+                                    <p>Es un agente antipsicótico que se usa para tratar la esquizofrenia y
+                                        otras psicosis, así como los síntomas de agitación, irritabilidad y delirio.</p>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class="tarjeta-medicamento animado">
+                            <section class="vuelta">
+                                <section class="frente">
+                                    <img src="../img/medicamentos/Levomepromazina.png" alt="Imagen de referencia" class="animado">
+                                    <h2 class="nombre-medicamento animado">Levomepromazina</h2>
+                                </section>
+                                <section class="atras">
+                                    <p>Es una fenotiazina utilizada en el tratamiento de la psicosis, en
+                                        particular las de la esquizofrenia, y las fases maníacas del trastorno bipolar.
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <button class="boton animado">
+                        <a href="../slider-med/medicamentosantipsicoticosT.html">
+                            Conoce más
+                            <i class="fa-solid fa-circle-right"></i>
+                        </a>
+                    </button>
+                </section>
+            </section>
+
+            <section class="med-atipicos">
+                <h3 class="animado" id="Atipicos">Atípicos</h3>
+                <p class="animado" id="contatipicos"></p>
+                <!--Aqui va las tarjetas de los medicamnetos-->
+
+                <section class="ir-medicamentos">
+                    <section class="tarjetas">
+                        <section class="tarjeta-medicamento animado">
+                            <section class="vuelta">
+                                <section class="frente">
+                                    <img src="../img/medicamentos/Aripiprazol.png" alt="Imagen de referencia" class="animado">
+                                    <h2 class="nombre-medicamento animado">Aripiprazol</h2>
+                                </section>
+                                <section class="atras">
+                                    <p>Antipsicótico atípico que se utiliza en el tratamiento de una amplia
+                                        variedad de trastornos psicóticos y del estado de ánimo.</p>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class="tarjeta-medicamento animado">
+                            <section class="vuelta">
+                                <section class="frente">
+                                    <img src="../img/medicamentos/Clozapina.png" alt="Imagen de referencia" class="animado">
+                                    <h2 class="nombre-medicamento animado">Clozapina</h2>
+                                </section>
+                                <section class="atras">
+                                    <p>Antipsicótico atípico o de segunda generación que se utiliza en la esquizofrenia
+                                        resistente al tratamiento y para disminuir el riesgo de suicidio en pacientes esquizofrénicos.
+                                    </p>
+                                </section>
+                            </section>
+                        </section>
+
+                        <section class="tarjeta-medicamento animado">
+                            <section class="vuelta">
+                                <section class="frente">
+                                    <img src="../img/medicamentos/Olanzapina.png" alt="Imagen de referencia" class="animado">
+                                    <h2 class="nombre-medicamento animado">Olanzapina</h2>
+                                </section>
+                                <section class="atras">
+                                    <p>Antipsicótico utilizado en el tratamiento de la esquizofrenia, el trastorno bipolar 1 y la
+                                        agitación asociada con estos trastornos.</p>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                    <button class="boton animado">
+                        <a href="../slider-med/medicamentosantipsicoticosA.html">
+                            Conoce más
+                            <i class="fa-solid fa-circle-right"></i>
+                        </a>
+                    </button>
+                </section>
+            </section>
+            </section>
+        </section>
+
+        <section class="event-adverso">
+            <section class="sindrome-neuroleptico">
+                <button class="playPause animado">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </button>
+                <button class="reset animado">
+                    <span><i class="fa-solid fa-rotate-right"></i></span>
+                </button>
+
+                <section class="texto-movimiento animado">
+                    <marquee class="animado"  behavior = "alternate" scrolldelay="150">Evento adverso que es importante tener en cuenta en la administración de medicamentos psiquiátricos</marquee>
+                </section>
+    
+                <p class="animado marquee-responsive">Evento adverso que es importante tener en cuenta en la administración de medicamentos psiquiátricos</p>
+                
+                <section class="conteventadv-p">
+                    <section class="conteventadv-s">
+                        <h3 class="animado">Síndrome neuroléptico</h3>
+                        <p class="animado" id="event-adv"></p>
+    
+                        <h4 class="animado">Fisiopatología</h4>
+                        <p class="animado" id="fisiopatologia"></p>
+                    </section>
+                    <img src="../img/Síndromeneuroléptico.png" alt="Imagen de referencia" class="animado">
+                </section>
+            </section>
+            <br><br>
+            <section class="sys">
+                <button class="playPause animado">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </button>
+                <button class="reset animado">
+                    <span><i class="fa-solid fa-rotate-right"></i></span>
+                </button>
+
+                <section class="conteventadv-sys">
+                    <h4 class="animado">Signos y síntomas</h4>
+                    <ul>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin1"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin2"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin3"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin4"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin5"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin6"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin7"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin8"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin9"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin10"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin11"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin12"></p></li>
+                        <li class="animado"><span class="icono"><i class="fa-solid fa-heart-circle-exclamation" style="color: red;"></i></span><p id="SigSin13"></p></li>
+                    </ul>
+                </section>
+            </section>
+
+            <section class="dyt">
+                <button class="playPause animado">
+                    <span><i class="fa-solid fa-play"></i></span>
+                </button>
+                <button class="reset animado">
+                    <span><i class="fa-solid fa-rotate-right"></i></span>
+                </button>
+
+                <section class="conteventadv-dyt">
+                    <section class="conteventadv-d">
+                        <h4 class="animado">Diagnóstico</h4>
+                        <ul>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-comment-medical" style="color: #076099;"></i></span><p id="diag1"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-comment-medical" style="color: #076099;"></i></span><p id="diag2"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-comment-medical" style="color: #076099;"></i></span><p id="diag3"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-comment-medical" style="color: #076099;"></i></span><p id="diag4"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-comment-medical" style="color: #076099;"></i></span><p id="diag5"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-comment-medical" style="color: #076099;"></i></span><p id="diag6"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-comment-medical" style="color: #076099;"></i></span><p id="diag7"></p></li>
+                        </ul>
+                    </section>
+    
+                    <section class="conteventadv-t">
+                        <h4 class="animado">Tratamiento</h4>
+                        <ul>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-kit-medical" style="color: #67b93e;"></i></span><p id="trat1"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-kit-medical" style="color: #67b93e;"></i></span><p id="trat2"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-kit-medical" style="color: #67b93e;"></i></span><p id="trat3"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-kit-medical" style="color: #67b93e;"></i></span><p id="trat4"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-kit-medical" style="color: #67b93e;"></i></span><p id="trat5"></p></li>
+                            <li class="animado"><span class="icono"><i class="fa-solid fa-kit-medical" style="color: #67b93e;"></i></span><p id="trat6"></p></li>
+                        </ul>
+                    </section>
+                </section>
+            </section>     
+        </section>
+    </main>
+
+    <footer>
+        <section class="pie-pagina">
+            <section class="contenido-pie">
+                <p><strong>Un proyecto en conjunto de:</strong></p>
+                <section class="creadores">
+                    <!-- Ingenieros Uniciencia-->
+                    <section class="santiago">
+                        <p>Corporación Universitaria de <br> Ciencia y Desarrollo - UNICIENCIA</p>
+                        <ul>
+                                <li>
+                                    <img src="../img/logoUniciecia.png" alt="Logo Uniciencia">
+                                </li>
+                            </ul>
+                        <p><strong>Santiago Archila Manrique & <br> Juan Camilo Archila Manrique</strong></p>
+                        <p>Ingeniería de Sistemas - UNICIENCIA</p>
+                    </section>
+
+                    <!-- Enfermero Uis / Hospital P San Camilo-->
+                    <section class="cesar">
+                        <p>Universidad Industrial de Santander</p>
+                        
+                        <ul>
+                            <li>
+                                <img src="../img/logoUis.png" alt="Logo San Camilo">
+                            </li>
+                        </ul>
+                        <p><strong>Cesar Fernando Rodriguez Silva &</strong><br>
+                        <strong>Angie Suley Barajas Bautista</strong> 
+                        </p>
+                        <p>PDA Enfermería - UIS</p>
+                        <p><Strong>Asesoramiento: Maria Consuelo Nuñez de Esteban - Docente</Strong></p>
+                    </section>
+                </section>
+                <h4>Todos los derechos reservados 2025 &copy;</h4>
+            </section>
+        </section>
+    </footer>
+</body>
+</html>
