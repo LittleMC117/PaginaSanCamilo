@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Object.keys(data).forEach(key => {
                 let paragraph = document.getElementById(key);
                 if (paragraph) {
-                    paragraph.textContent = data[key]; // Insertar el contenido en el <p>
+                    paragraph.innerHTML = data[key]; // Usamos innerHTML para permitir etiquetas
                 }
             });
         })
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Object.keys(data).forEach(key => {
                 let paragraph = document.getElementById(key);
                 if (paragraph) {
-                    paragraph.textContent = data[key]; // Insertar el contenido en el <p>
+                    paragraph.innerHTML = data[key]; // Usamos innerHTML para permitir etiquetas
                 }
             });
         })
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Object.keys(data).forEach(key => {
                 let paragraph = document.getElementById(key);
                 if (paragraph) {
-                    paragraph.textContent = data[key]; // Insertar el contenido en el <p>
+                    paragraph.innerHTML = data[key]; // Usamos innerHTML para permitir etiquetas
                 }
             });
         })
@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Object.keys(data).forEach(key => {
                 let paragraph = document.getElementById(key);
                 if (paragraph) {
-                    paragraph.textContent = data[key]; // Insertar el contenido en el <p>
+                    paragraph.innerHTML = data[key]; // Usamos innerHTML para permitir etiquetas
                 }
             });
         })
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Object.keys(data).forEach(key => {
                 let paragraph = document.getElementById(key);
                 if (paragraph) {
-                    paragraph.textContent = data[key]; // Insertar el contenido en el <p>
+                    paragraph.innerHTML = data[key]; // Usamos innerHTML para permitir etiquetas
                 }
             });
         })
@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Object.keys(data).forEach(key => {
                 let paragraph = document.getElementById(key);
                 if (paragraph) {
-                    paragraph.textContent = data[key]; // Insertar el contenido en el <p>
+                    paragraph.innerHTML = data[key]; // Usamos innerHTML para permitir etiquetas
                 }
             });
         })
@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
             Object.keys(data).forEach(key => {
                 let paragraph = document.getElementById(key);
                 if (paragraph) {
-                    paragraph.textContent = data[key]; // Insertar el contenido en el <p>
+                   paragraph.innerHTML = data[key]; // Usamos innerHTML para permitir etiquetas
                 }
             });
         })
